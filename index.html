@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Sami's Art of the Web</title>
+    </head>
+    <body>
+
+        <div id="hi">
+        <img src="dom.png" alt="desk illustration" usemap="#dom">
+
+        <map name="dom">
+            <area shape="rect" coords="425, 215, 816, 760" href="index.html" onmouseover="caption(1)" onmouseleave="caption(0)" >
+            <area shape="rect" coords="983, 114, 1176, 230" href="ascii.html" onmouseover="caption(2)" onmouseleave="caption(0)">
+            <area shape="poly" coords="220, 250, 393, 184, 388, 469, 340, 485, 292, 311" href="flower.html" onmouseover="caption(3)" onmouseleave="caption(0)">
+            <area shape="poly" coords="220, 400, 271, 574, 314, 664, 385, 573, 296, 538, 230, 403" href="tea.html" onmouseover="caption(4)" onmouseleave="caption(0)">
+            <area shape="poly" coords="18, 697, 83, 672, 90, 611, 115, 532, 173, 526, 190 589, 207, 706, 239, 708, 236, 751, 172, 780, 20, 757" href="vacation.html" onmouseover="caption(5)" onmouseleave="caption(0)">
+            <area shape="circle" coords="185, 105, 90" href="clock.html" onmouseover="caption(6)" onmouseleave="caption(0)">
+            <area shape="poly" coords="0, 336, 60, 272, 190, 320, 200, 405, 80, 500, 0, 490" href="readings.html" onmouseover="caption(7)" onmouseleave="caption(0)">
+            <area shape="circle" coords="1022, 588, 80" href="web-ring.html" onmouseover="caption(8)" onmouseleave="caption(0)">
+            <area shape="poly" coords="880, 345, 968, 279, 1090, 313, 1115, 350, 1130, 400, 1096, 485, 1095, 444, 868, 384" href="pbj.html" onmouseover="caption(9)" onmouseleave="caption(0)">
+            <area shape="poly" coords="765, 470, 880, 460, 920, 580, 765, 595" href="still-life.html" onmouseover="caption(10)" onmouseleave="caption(0)">
+            <area shape="poly" coords="353, 0, 350, 50, 435, 181, 549, 137, 762, 170, 816, 94, 828, 0" href="iss.html" onmouseover="caption(11)" onmouseleave="caption(0)">
+        </map>
+
+        </div>
+
+
+        <center> <label id = "message">
+            Welcome to my Art of the Web Portfolio!
+        </label> </center>
+
+
+        <script>
+            function caption(number) {
+                var x = document.getElementById("message");
+                if (number == 2) {
+                    x.innerHTML = "Try to squint realy hard for this one";
+                } else if (number == 3) {
+                    x.innerHTML = "Grow your own sunflower! Or you know. Actually go outside.";
+                } else if (number == 4) {
+                    x.innerHTML = "Divinition x generative art";
+                } else if (number == 5) {
+                    x.innerHTML = "my love letter to vacation inc. modern escape made retro";
+                } else if (number == 6) {
+                     x.innerHTML = "maybe explains why I'm late to everything";
+                } else if (number == 7) {
+                    x.innerHTML = "sunday 11:58pm thoughts";
+                } else if (number == 8) {
+                    x.innerHTML = "According to Wikipedia, 'a web ring is a collection of websites linked together in a circular structure, and usually organized around a specific theme, often educational or social.' Connected via vacation project.";
+                } else if (number == 9) {
+                    x.innerHTML = "First day of programming eyeroll.";    // Made in collaboration with Namita Sajai and Grace Thanglerdsumpan.
+                } else if (number == 10) {
+                    x.innerHTML = "NEVER doing this in css again";
+                } else if (number == 11) {
+                    x.innerHTML = "wave to the iss!";
+                } else {
+                    x.innerHTML = "Welcome to my Art of the Web Portfolio!";
+                }
+            }
+         </script>
+
+
+
+
+    </body>
+</html>
